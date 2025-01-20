@@ -1,0 +1,32 @@
+{
+    "name": "Perl5 Development Container",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "extensions": ["richterger.perl"]
+            },
+            "extensions": [
+                "kraih.mojolicious",
+                "bscan.perlnavigator",
+                "jeff-hykin.better-perl-syntax",
+                "GrapeCity.gc-excelviewer",
+                "ms-azuretools.vscode-docker",
+                "intellsmi.comment-translate",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "VisualStudioExptTeam.intellicode-api-usage-examples",
+                "Zignd.html-css-class-completion",
+                "ritwickdey.LiveServer",
+                "ms-vsliveshare.vsliveshare",
+                "christian-kohler.path-intellisense",
+                "mechatroner.rainbow-csv",
+                "shardulm94.trailing-spaces"
+            ]
+        }
+    },
+    "postCreateCommand": "cpanm Mojolicious"
+}
