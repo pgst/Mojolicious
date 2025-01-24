@@ -28,6 +28,9 @@ RUN /bin/bash -c "source ~/.bashrc && plenv install 5.40.1 && plenv global 5.40.
 # cpanmをインストール
 RUN /bin/bash -c "source ~/.bashrc && plenv install-cpanm"
 
+# Carmelをインストール
+RUN /bin/bash -c "source ~/.bashrc && cpanm Carmel"
+
 # 環境変数を設定（必要に応じて）
 ENV LANG=en_US.UTF-8
 ENV LC_ALL=en_US.UTF-8

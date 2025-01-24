@@ -28,5 +28,6 @@
             ]
         }
     },
-    "postCreateCommand": "cpanm Mojolicious"
+    "postCreateCommand": "carmel install",
+    "forwardPorts": [3000]
 }
