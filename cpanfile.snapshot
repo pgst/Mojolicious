@@ -1,5 +1,17 @@
 # carton snapshot format: version 1.0
 DISTRIBUTIONS
+  Config-Tiny-2.30
+    pathname: R/RS/RSAVAGE/Config-Tiny-2.30.tgz
+    provides:
+      Config::Tiny 2.30
+    requirements:
+      ExtUtils::MakeMaker 0
+      File::Spec 3.30
+      File::Temp 0.22
+      Test::More 0.47
+      perl 5.008001
+      strict 0
+      utf8 0
   Mojolicious-9.39
     pathname: S/SR/SRI/Mojolicious-9.39.tar.gz
     provides:
